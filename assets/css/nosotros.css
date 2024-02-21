@@ -1,0 +1,40 @@
+@import url(global.css);
+
+/* Sobre Nosotros*/
+
+.content {
+    min-height: 100vh;
+}
+
+#sobre-nosotros {
+    background: var(--bg-sobre-nosotros);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+/* MD */
+/* metemos una media querry que asegura que la foto de fondo no se vea muy cortada */
+@media (min-width: 768px) {
+    #sobre-nosotros {
+        min-height: 1000px;
+    }
+}
+
+.card-nosotros {
+    background-color: var(--color-oscuro-secundario);
+    backdrop-filter: blur(5px);
+
+    & h3 {
+        color: var(--text-nosotros-title);
+    }
+
+    & p {
+        color: var(--text-nosotros);
+    }
+}
+
+.card {
+    background-color: transparent;
+    max-width: 100%;
+}

@@ -1,0 +1,79 @@
+:root {
+        /* PALETA DE COLORES */
+        --color-principal: #F6F6F6;
+        --color-secundario: rgb(246, 246, 246, .7);
+        /*--color-secundario: #E2E2E2;*/
+        --color-beige: #D9CAB3;
+        --color-beige-secundario: rgba(217, 202, 179, .5);
+        --color-verde: #6D9886;
+        --color-verde-secundario: rgb(109, 152, 134, .8);
+        --color-oscuro: #171717;
+        --color-oscuro-secundario: rgb(23, 23, 23, .5);
+        --color-error: tomato;
+        --color-resaltar: #6C22A6;
+        --color-resaltar-oscuro: rgb(95, 30, 145);
+        --color-resaltar-secundario: rgb(108, 34, 166, .5);
+        /*------------------------------------------------------*/
+
+
+        /* Imagenes de fondo*/
+        --bg-body: linear-gradient(to bottom,
+                        var(--color-beige),
+                        var(--color-verde));
+        ;
+        --bg-presentacion: linear-gradient(to bottom,
+                        rgba(0, 0, 0, 0),
+                        var(--color-resaltar-secundario)),
+                url(../img/producto/bg-nreal-removebg-preview.png);
+        --bg-sobre-nosotros: linear-gradient(to bottom,
+                        rgba(0, 0, 0, 0),
+                        var(--color-resaltar-secundario)),
+                url(../img//equipo/carloslanda.png);
+
+        /* APLICACIÓN DEL COLOR */
+
+        /*GLOBAL y NAVBAR*/
+        --text-color: var(--color-oscuro);
+        --text-color-active: var(--color-verde);
+        --text-a: var(--color-principal);
+        --bg-navbar: var(--color-beige-secundario);
+        --bg-logo:
+                /* transparent */
+                rgba(255, 255, 255, 0);
+        --bg-navbar-border: var(--color-oscuro);
+        --bg-navitem-hover: var(--color-resaltar);
+        --bg-navitem-active: var(--color-verde);
+        --text-navitem-hover: var(--color-principal);
+        --text-navitem-active: var(--color-principal);
+        --bg-dropdown-menu: var(--color-beige);
+        --bg-dropdown-item-hover: var(--color-resaltar);
+
+        /* index.html */
+        --text-item-hover: var(--color-principal);
+        --bg-slogan: var(--color-verde-secundario);
+        --text-slogan1: var(--color-resaltar);
+        --text-slogan2: var(--color-resaltar);
+        --bg-card: linear-gradient(to bottom,
+                        transparent,
+                        var(--color-beige));
+        --bg-btn: var(--color-resaltar-secundario);
+        --text-btn: var(--color-principal);
+        --bg-btn-hover: var(--color-resaltar);
+        --text-btn-hover: var(--color-principal);
+
+        /* nosotros */
+        --text-nosotros-title: var(--color-principal);
+        --text-nosotros: var(--color-secundario);
+
+        /*contacto*/
+        --bg-form-input: var(--color-oscuro-secundario);
+
+        /*LandAppStore*/
+        --bg-landappstore-presentacion: linear-gradient(var(--color-resaltar-secundario),
+                        var(--color-beige-secundario)),
+                url(../img/landastore/LandAppStore.webp);
+
+        /*FOOTER GLOBAL*/
+        --bg-footer: var(--color-verde);
+        --text-secundario-footer: var(--color-oscuro-secundario);
+}

@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=Khula:700);
+/*FONT PARA EFECTO MAQUINA DE ESCRIBIR*/
+
+
+/*Este archivo solo sirve para guardad conjunto de instrucciones CSS para diferentes effectos */
+
+/*SMOOTH AUTO SCROLL*/
+html {
+    scroll-behavior: smooth;
+    /* Si descuadra añadir margin o padding al elemento descuadrado */
+}
+
+/* STICKY */
+sticky-top {
+    position: sticky;
+    top: 0;
+}
+
+sticky-top-5 {
+    position: sticky;
+    top: 5;
+}
+
+sticky-bottom {
+    position: sticky;
+    bottom: 0;
+}
+
+/* Para pantallas pequeñas desactivar sticky */
+sticky-disabled {
+    position: static;
+}
+
+/* STICKY BACKGROUD */
+sticky-backgroud {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background: var(--body-background);
+}
+
+#back-video-container {
+    background-color: black;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    align-items: right center;
+    padding: 0%;
+    margin: 0%;
+    text-align: right center;
+}
+
+#back-video {
+    height: 100%;
+}
+
+/*Efecto mquina de escribir TITULO*/
+
+header {
+    background: #11111152;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.console-container {
+
+    font-family: Khula;
+    font-size: 4em;
+    text-align: center;
+    height: 200px;
+    width: 600px;
+    display: block;
+    position: absolute;
+    color: white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.console-underscore {
+    display: inline-block;
+    position: relative;
+    top: -0.14em;
+    left: 10px;
+}

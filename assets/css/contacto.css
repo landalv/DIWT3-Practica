@@ -1,0 +1,49 @@
+@import url(global.css);
+
+
+header {
+    background: linear-gradient(var(--color-verde-secundario),
+            var(--color-resaltar-secundario)), url(../img/contact-us.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+header .card {
+    background-color: transparent;
+}
+
+
+input,
+textarea {
+    background-color: var(--bg-form-input);
+}
+
+textarea {
+    resize: vertical;
+    /*form-sizing: content;  /*todavia no está implantado*/
+    height: 200px !important;
+}
+
+.invalid-feedback {
+    /*background-color: var(--color-resaltar);*/
+}
+
+section.card {
+    background-color: transparent;
+
+    & label {
+        background-color: transparent;
+    }
+
+    & .form-floating {
+        background-color: var(--color-resaltar-secundario);
+    }
+
+    & .input-group {
+        background-color: var(--color-resaltar-secundario);
+
+        & .form-floating {
+            background-color: transparent;
+        }
+    }
+}

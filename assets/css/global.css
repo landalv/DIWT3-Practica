@@ -1,0 +1,124 @@
+/* Importaciones */
+@import url(imports.css);
+
+/* Valores por defecto */
+* {
+    font-family: 'Roboto', 'Tinos', sans-serif, serif;
+    color: var(--text-color);
+}
+
+body {
+    overflow-x: hidden;
+    background: var(--bg-body);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-a);
+}
+
+a.active {
+    color: var(--text-color-active);
+}
+
+.btn-primary {
+    background-color: var(--color-resaltar);
+    border: 1px solid var(--color-resaltar);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-resaltar-oscuro);
+    border: 1px solid var(--color-resaltar-oscuro);
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    /*border-bottom: solid 1px var(--bg-navbar-border);*/
+    backdrop-filter: blur(8px);
+    min-height: 7%;
+}
+
+/*.logo {
+    width: 25%;
+    background-color: var(--bg-logo);
+    border: 0px solid var(--bg-logo);
+}*/
+.navbar-logo {
+    display: inline-block;
+    vertical-align: middle;
+    width: 70px;
+}
+
+.navbar-logo img {
+    display: block;
+    width: auto;
+    height: auto;
+    background-color: var(--bg-logo);
+    border: 0px solid var(--bg-logo);
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    background-color: var(--bg-navitem-hover);
+    color: var(--text-navitem-hover);
+}
+
+.nav-item:hover .nav-link,
+.nav-item:hover .nav-link span,
+.nav-item:hover .nav-link i {
+    background-color: var(--bg-navitem-hover);
+    color: var(--text-navitem-hover);
+}
+
+.dropdown-menu {
+    background-color: var(--bg-dropdown-menu);
+    backdrop-filter: blur(8px);
+}
+
+.dropdown-item:hover {
+    background-color: var(--bg-dropdown-item-hover);
+    color: var(--text-item-hover);
+}
+
+/* FOOTER */
+/*footer {
+    background-color: var(--bg-footer);
+}*/
+
+footer a,
+footer p {
+    color: var(--text-secundario-footer);
+}
+
+.footer-logo {
+    color: var(--text-secundario-footer);
+    width: 50%;
+    background-color: var(--bg-logo);
+    border: 0px solid var(--bg-logo);
+}
+
+
+/* MEDIA QUERRIES */
+
+/* SM */
+@media (min-width: 576px) {}
+
+/* MD */
+@media (min-width: 768px) {}
+
+/* LG */
+@media (min-width: 992px) {}
+
+/* XL */
+@media (min-width: 1200px) {}

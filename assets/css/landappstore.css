@@ -1,0 +1,97 @@
+@import url(global.css);
+
+.nav-link,
+.nav-link span,
+.nav-link i,
+.navbar-title {
+    color: var(--color-principal);
+}
+
+.body-content {
+    background: var(--bg-landappstore-presentacion);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 75vh;
+
+    & h3 {
+        backdrop-filter: blur(8px);
+        color: var(--color-resaltar);
+    }
+
+    & hr {
+        margin-top: 0%;
+    }
+}
+
+
+.card {
+    background-color: var(--color-verde-secundario);
+    color: var(--color-principal);
+    backdrop-filter: blur(1px);
+
+    & h3 {
+        color: var(--color-principal);
+    }
+
+    & .card-title {
+        color: var(--color-principal);
+    }
+
+    & .card-text {
+        color: var(--color-principal);
+    }
+}
+
+.category-container#features {
+    background: linear-gradient(var(--color-resaltar-secundario), var(--color-resaltar-secundario)),
+        url(../img/landastore/SteamDeckCompanion.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+}
+
+.category-container#redes {
+    background: linear-gradient(var(--color-resaltar-secundario), var(--color-resaltar-secundario)),
+        url(../img/landastore/redes_sociales.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.category-container#multimedia {
+    background: linear-gradient(var(--color-resaltar-secundario), var(--color-resaltar-secundario)),
+        url(../img/landastore/HomeCinema.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.category-container {
+
+    & .category-title-continer {
+
+        & .category-title {
+            backdrop-filter: blur(8px);
+        }
+    }
+
+    & .destacated-app {
+        & img {
+            background-color: transparent;
+        }
+    }
+
+    & .app-group {
+        & .col {
+            max-width: 380px;
+        }
+
+        & img {
+            max-width: 72px;
+            max-height: 72px;
+            margin: 10%;
+        }
+    }
+}

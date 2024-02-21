@@ -1,0 +1,64 @@
+@import url(global.css);
+
+/* CONTENIDO BODY */
+.body-content {
+    /* EL margin top se settea desde JQUERY index.js */
+    /* Para añadir espacio superior extra debajo del navbar añadimos padding top a este elñemento */
+    /*background-color: blue
+        /*para visualizar el div* /
+    ;*/
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+/* Presentación Producto */
+
+.presentacion {
+    background: var(--bg-presentacion);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.console-container span {
+    background: var(--bg-slogan);
+}
+
+/*card-goup productos*/
+
+#productos-cardgroup .card {
+    background: transparent;
+    border: 2px solid var(--color-oscuro-secundario);
+
+}
+
+.img-holder {
+    overflow: hidden;
+}
+
+.img-holder img {
+    transition: all 1.5s ease-in-out;
+    -webkit-transition: all 1.5s ease-in-out;
+    -moz-transition: all 1.5s ease-in-out;
+    -ms-transition: all 1.5s ease-in-out;
+    -o-transition: all 1.5s ease-in-out;
+}
+
+.img-holder:hover img {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+.btn {
+    background-color: var(--bg-btn);
+    color: var(--text-btn);
+}
+
+.btn:hover {
+    background-color: var(--bg-btn-hover);
+    color: var(--text-btn-hover);
+}

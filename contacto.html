@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8"><!--Especificamos juego de caracteres-->
+    <!--Titulo-->
+    <title>Landa Glass</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="./assets/img/logos/logo-simbol-v2.jpg">
+    <!--Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Estilos CSS-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/contacto.css">
+    <!--estilos generales para estructura HTML5-->
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="assets/js/index.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-bg-color navbar-expand-lg roboto-bold-italic p-0 m-0 fixed-top">
+        <div class="container d-flex justify-content-between">
+            <a class="navbar-brand mx-auto col" href="index.html">
+                <div class="navbar-logo">
+                    <img src="assets/img/logos/logo-simbol-v2.png" class="logo img-fluid img-thumbnail" alt="Logo">
+                </div>
+                <span class="navbar-title display-6">Landa Glass</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto me-0 mb-2 mb-lg-0">
+                    <li class="nav-item rounded">
+                        <a class="nav-link px-3 rounded active-link" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item rounded dropdown">
+                        <a class="nav-link px-3 rounded dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu my-4" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="productos.html#landaFlow">Landa SmartGlass Flow</a>
+                            </li>
+                            <li><a class="dropdown-item" href="productos.html#accesorios">Accesorios</a></li>
+                            <li><a class="dropdown-item" href="landappstore.html">Landa Store</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item rounded">
+                        <a class="nav-link px-3 rounded" aria-current="page" href="nosotros.html">
+                            Nosotros
+                        </a>
+                    </li>
+                    <li class="nav-item rounded">
+                        <a class="nav-link px-3 rounded" aria-current="page" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item rounded">
+                        <a class="nav-link px-3 rounded" aria-current="page" href="landappstore.html">
+                            <span class="d-none d-lg-inline">LandAppStore</span>
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="content mb-0 pb-0 container">
+        <header class="my-5 card border-0 p-0" id="sobre-nosotros">
+            <div class="row g-0">
+                <div class="col-md-6">
+                    <div class="card-body m-5 justify-content-center">
+                        <h5 class="card-title display-1">Contactanos</h5>
+                        <p class="card-text">Para cualquier duda, o asistencia estamos a tu disposición. Rellena el
+                            formulario y nos pondremos en contacto a traves de email.</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="my-5 card">
+            <form class="row g-3 needs-validation m-3" novalidate>
+
+                <div class="input-group rounded-3">
+                    <div class="form-floating">
+                        <input type="text" aria-label="First name" class="form-control-plaintext text-white mt-2"
+                            id="floatingInputFistName" placeholder="Fist name" required>
+                        <label for="floatingInputFirstName">Nombre</label>
+                        <div class="valid-feedback">
+                        </div>
+                        <div class="invalid-feedback rounded text-center mb-3 p-1 text-white">
+                            Escribe tu nombre.
+                        </div>
+                    </div>
+                    <div class="form-floating">
+                        <input type="text" aria-label="Last name" class="form-control-plaintext text-white mt-2"
+                            id="floatingInputLastName" placeholder="Last name" required>
+                        <label for="floatingInputLastName">Apellidos</label>
+                        <div class="valid-feedback">
+                        </div>
+                        <div class="invalid-feedback rounded text-center mb-3 p-1 text-white">
+                            Escribe tus apellidos.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-floating mb-3 rounded-3">
+                    <input type="email" class="form-control-plaintext text-white mt-2" id="floatingInputemail"
+                        placeholder="name@example.com" required>
+                    <label for="floatingInputemail">Email</label>
+                    <div class="valid-feedback">
+                    </div>
+                    <div class="invalid-feedback rounded text-center mb-3 p-1 text-white">
+                        Escribe tu email para poder contactarte.
+                    </div>
+                </div>
+                <div class="form-floating rounded-3">
+                    <textarea class="form-control-plaintext text-white mt-2" placeholder="Deja tu mensage"
+                        id="floatingTextarea" required></textarea>
+                    <label for="floatingTextarea">Mensage</label>
+                    <div class="valid-feedback">
+                    </div>
+                    <div class="invalid-feedback rounded text-center mb-3 p-1 text-white">
+                        Deja tu mensage, o duda.
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Submit form</button>
+                </div>
+            </form>
+            <script>
+                // Example starter JavaScript for disabling form submissions if there are invalid fields
+                (() => {
+                    'use strict'
+
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    const forms = document.querySelectorAll('.needs-validation')
+
+                    // Loop over them and prevent submission
+                    Array.from(forms).forEach(form => {
+                        form.addEventListener('submit', event => {
+                            if (!form.checkValidity()) {
+                                event.preventDefault()
+                                event.stopPropagation()
+                            }
+
+                            form.classList.add('was-validated')
+                        }, false)
+                    })
+                })()
+            </script>
+        </section>
+    </div>
+
+    <hr>
+    <footer class="container-fluid">
+        <div class="row px-5 pt-4 pb-2 bg-secundary">
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <h3 class="h3">Landa Glass</h3>
+                <div class="mb-2">
+                    <p class="">Spain, Seville</p>
+                </div>
+                <img src="assets/img/logos/logo-simbol-v2.svg" class="footer-logo img-fluid img-thumbnail mx-2 mb-5"
+                    alt="Logo">
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <h5 class="h5 mb-3">Productos</h5>
+                <div class="mb-2"><a href="#" class="">Landa SmartGlass Flow</a></div>
+                <div class="mb-2"><a href="#" class="">Landa SmartGlass Accesorios</a></div>
+                <div class="mb-2"><a href="#" class="">Landa Store</a></div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <h5 class="h5 mb-3">Links</h5>
+                <div class="mb-2"><a href="#" class="">Term & Conditions</a></div>
+                <div class="mb-2"><a href="#" class="">Privacy Policy</a></div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <h5 class="h5 mb-3">Contacto</h5>
+                <div class="mb-2"><a href="https://github.com/landalv" class="">Github</a></div>
+                <div class="mb-2"><a href="https://www.linkedin.com/in/carlos-landa-vazquez/" class="">LinkIn</a></div>
+            </div>
+        </div>
+        <div class="row px-5 py-2 bg-secundary">
+            <p class="h5 col-12 text-center">Copyright - All rigths reserved &copy; 2024</h2>
+            </p>
+        </div>
+        <!--Pie de pagina web
+        <div class="container justify-content-center">
+            <div class="row justify-content-center">
+                <h2 class="display-6">&copy; carloslanda.es 2023</h2>
+            </div>
+
+        </div>-->
+    </footer>
+
+    <!--Boostrap-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

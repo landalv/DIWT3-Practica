@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8"><!--Especificamos juego de caracteres-->
+    <!--Titulo-->
+    <title>Landa Glass</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="./assets/img/logos/logo-simbol-v2.jpg">
+    <!--Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Estilos CSS-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/index.css"><!--estilos generales para estructura HTML5-->
+    <link rel="stylesheet" href="./assets/css/fx.css">
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="assets/js/index.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-bg-color navbar-expand-lg roboto-bold-italic p-0 m-0 fixed-top">
+        <div class="container d-flex justify-content-between">
+            <a class="navbar-brand mx-auto col" href="index.html">
+                <div class="navbar-logo">
+                    <img src="assets/img/logos/logo-simbol-v2.png" class="logo img-fluid img-thumbnail" alt="Logo">
+                </div>
+                <span class="navbar-title display-6">Landa Glass</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto me-0 mb-2 mb-lg-0">
+                    <li class="nav-item rounded">
+                        <a class="nav-link px-3 rounded active-link" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item rounded dropdown">
+                        <a class="nav-link px-3 rounded dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu my-4" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="productos.html#landaFlow">Landa SmartGlass Flow</a></li>
+                            <li><a class="dropdown-item" href="productos.html#accesorios">Accesorios</a></li>
+                            <li><a class="dropdown-item" href="landappstore.html">Landa Store</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item rounded">
+                        <a class="nav-link px-3 rounded" aria-current="page" href="nosotros.html">
+                            Nosotros
+                        </a>
+                    </li>
+                    <li class="nav-item rounded">
+                        <a class="nav-link px-3 rounded" aria-current="page" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item rounded">
+                        <a class="nav-link px-3 rounded" aria-current="page" href="landappstore.html">
+                            <span class="d-none d-lg-inline">LandAppStore</span>
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="content">
+        <header class="body-content">
+            <div class="container-fluid presentacion">
+                <!-- TITULO MQUINA DE ESCRIBIR -->
+                <div class='console-container mx-0 py-0 w-100 display-1'>
+                    <div class="display-1 rounded">
+                        <span id='text' class="rounded"></span>
+                        <!--<span class='console-underscore' id='console'>&#95;</span>-->
+                    </div>
+                </div>
+                <script src="./assets/js/maquina_escribir_titulo.js"></script>
+            </div>
+
+
+        </header>
+        <main>
+            <section id="productos-cardgroup">
+                <div class="card-group my-5 justify-content-center">
+                    <div class="card m-3 rounded col-sm-12 col-lg-4 mx-auto m-sm-3" style="width: 18rem;">
+                        <div class="img-holder">
+                            <img src="assets/img/producto/nreal-removebg-preview.png" class="card-img-top rounded"
+                                alt="...">
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Landa Glass Flow</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">299.99$</h6>
+                            <a href="productos.html#landaFlow" class="btn">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="card m-3 rounded col-sm-12 col-lg-4 mx-auto m-sm-3" style="width: 18rem;">
+                        <div class="img-holder">
+                            <img src="assets/img/producto/accessories1.png" class="card-img-top rounded" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Accesorios</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">Personalizacion al 100%</h6>
+                            <a href="productos.html#accesorios" class="btn">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="card m-3 rounded col-sm-12 col-lg-4 mx-auto m-sm-3" style="width: 18rem;">
+                        <div class="img-holder w-100">
+                            <img src="assets/img/logos/tienda-de-aplicaciones_landa.png"
+                                class="card-img-top rounded m-5 w-75" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Landa Store</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">Tienda de Aplicaciones</h6>
+                            <a href="landappstore.html" class="btn">Ver Aplicaciones</a>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <hr>
+            <section class="py-5">
+                <article class="container" id="presentacion">
+                    <div class="row align-content-center">
+                        <div class="col-12 col-lg-12 text-center mb-3">
+                            <h1 class="titillium mb-2">Landa SmartGlass Flow</h1>
+                        </div>
+                        <div class="col-12 justify-content-center">
+                            <div class="col-12 px-2">
+                                <p class="mb-4">Adquirir unas <strong>Landa SmartGlass Flow</strong> de realidad virtual
+                                    con
+                                    Android reemplazan al teléfono móvil, y puede transformar por completo la
+                                    experiencia
+                                    cotidiana. Estos dispositivos no solo representan un avance tecnológico, sino que
+                                    también
+                                    ofrecen una convergencia única entre la realidad virtual y las funciones esenciales
+                                    de
+                                    un
+                                    teléfono inteligente. Al utilizar estas gafas, disfrutarás de una inmersión sin
+                                    precedentes
+                                    en contenido visual y experiencias interactivas. </p>
+                            </div>
+                            <div class="col-12 col-lg-12">
+                                <div class="container text-center my-3">
+                                    <div class="row justify-content-between">
+                                        <div class="col-12 col-lg-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                                                fill="currentColor" class="bi bi-projector" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M14 7.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM2.5 6a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4Zm0 2a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4Z" />
+                                                <path
+                                                    d="M0 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2 1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1H5a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1 2 2 0 0 1-2-2V6Zm2-1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H2Z" />
+                                            </svg>
+                                            <h3 class="display-6">OLED Screen</h3>
+                                            <p>LA mejor tecnologia de pantalla OLED mioniturizadas.</p>
+                                        </div>
+                                        <div class="col-12 col-lg-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                                                fill="currentColor" class="bi bi-cpu" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 14 4.5h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14a2.5 2.5 0 0 1-2.5 2.5v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14A2.5 2.5 0 0 1 2 11.5H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2A2.5 2.5 0 0 1 4.5 2V.5A.5.5 0 0 1 5 0zm-.5 3A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 11.5 3h-7zM5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3zM6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z" />
+                                            </svg>
+                                            <h3 class="display-6">AI Image Generator</h3>
+                                            <p>Generación de imagenes a traves de IA, para un mejor rendimiento.</p>
+                                        </div>
+                                        <div class="col-12 col-lg-4 ">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                                                fill="currentColor" class="bi bi-android2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="m10.213 1.471.691-1.26c.046-.083.03-.147-.048-.192-.085-.038-.15-.019-.195.058l-.7 1.27A4.832 4.832 0 0 0 8.005.941c-.688 0-1.34.135-1.956.404l-.7-1.27C5.303 0 5.239-.018 5.154.02c-.078.046-.094.11-.049.193l.691 1.259a4.25 4.25 0 0 0-1.673 1.476A3.697 3.697 0 0 0 3.5 5.02h9c0-.75-.208-1.44-.623-2.072a4.266 4.266 0 0 0-1.664-1.476ZM6.22 3.303a.367.367 0 0 1-.267.11.35.35 0 0 1-.263-.11.366.366 0 0 1-.107-.264.37.37 0 0 1 .107-.265.351.351 0 0 1 .263-.11c.103 0 .193.037.267.11a.36.36 0 0 1 .112.265.36.36 0 0 1-.112.264Zm4.101 0a.351.351 0 0 1-.262.11.366.366 0 0 1-.268-.11.358.358 0 0 1-.112-.264c0-.103.037-.191.112-.265a.367.367 0 0 1 .268-.11c.104 0 .19.037.262.11a.367.367 0 0 1 .107.265c0 .102-.035.19-.107.264ZM3.5 11.77c0 .294.104.544.311.75.208.204.46.307.76.307h.758l.01 2.182c0 .276.097.51.292.703a.961.961 0 0 0 .7.288.973.973 0 0 0 .71-.288.95.95 0 0 0 .292-.703v-2.182h1.343v2.182c0 .276.097.51.292.703a.972.972 0 0 0 .71.288.973.973 0 0 0 .71-.288.95.95 0 0 0 .292-.703v-2.182h.76c.291 0 .54-.103.749-.308.207-.205.311-.455.311-.75V5.365h-9v6.404Zm10.495-6.587a.983.983 0 0 0-.702.278.91.91 0 0 0-.293.685v4.063c0 .271.098.501.293.69a.97.97 0 0 0 .702.284c.28 0 .517-.095.712-.284a.924.924 0 0 0 .293-.69V6.146a.91.91 0 0 0-.293-.685.995.995 0 0 0-.712-.278Zm-12.702.283a.985.985 0 0 1 .712-.283c.273 0 .507.094.702.283a.913.913 0 0 1 .293.68v4.063a.932.932 0 0 1-.288.69.97.97 0 0 1-.707.284.986.986 0 0 1-.712-.284.924.924 0 0 1-.293-.69V6.146c0-.264.098-.491.293-.68Z" />
+                                            </svg>
+                                            <h3 class="display-6">Android OS</h3>
+                                            <p>Sistema Operativo basado en Android con Optimizaciones de visualización
+                                                3D.
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-lg-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                                                fill="currentColor" class="bi bi-cast" viewBox="0 0 16 16">
+                                                <path
+                                                    d="m7.646 9.354-3.792 3.792a.5.5 0 0 0 .353.854h7.586a.5.5 0 0 0 .354-.854L8.354 9.354a.5.5 0 0 0-.708 0z" />
+                                                <path
+                                                    d="M11.414 11H14.5a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.5-.5h-13a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .5.5h3.086l-1 1H1.5A1.5 1.5 0 0 1 0 10.5v-7A1.5 1.5 0 0 1 1.5 2h13A1.5 1.5 0 0 1 16 3.5v7a1.5 1.5 0 0 1-1.5 1.5h-2.086l-1-1z" />
+                                            </svg>
+                                            <h3 class="display-6">Remote Monitoring</h3>
+                                            <p>Monitero Remoto de todo el Sistema, con vista de Realidad, Realidad
+                                                Aumentada
+                                                o
+                                                Mixta.
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-lg-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                                                fill="currentColor" class="bi bi-battery-charging" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M9.585 2.568a.5.5 0 0 1 .226.58L8.677 6.832h1.99a.5.5 0 0 1 .364.843l-5.334 5.667a.5.5 0 0 1-.842-.49L5.99 9.167H4a.5.5 0 0 1-.364-.843l5.333-5.667a.5.5 0 0 1 .616-.09z" />
+                                                <path
+                                                    d="M2 4h4.332l-.94 1H2a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h2.38l-.308 1H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z" />
+                                                <path
+                                                    d="M2 6h2.45L2.908 7.639A1.5 1.5 0 0 0 3.313 10H2V6zm8.595-2-.308 1H12a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H9.276l-.942 1H12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.405z" />
+                                                <path
+                                                    d="M12 10h-1.783l1.542-1.639c.097-.103.178-.218.241-.34V10zm0-3.354V6h-.646a1.5 1.5 0 0 1 .646.646zM16 8a1.5 1.5 0 0 1-1.5 1.5v-3A1.5 1.5 0 0 1 16 8z" />
+                                            </svg>
+                                            <h3 class="display-6">48H</h3>
+                                            <p>Durabilidad de 48 horas de uso ininterrumpido.</p>
+                                        </div>
+                                        <div class="col-12 col-lg-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                                                fill="currentColor" class="bi bi-usb-c" viewBox="0 0 16 16">
+                                                <path d="M3.5 7.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9Z" />
+                                                <path
+                                                    d="M0 8a3 3 0 0 1 3-3h10a3 3 0 1 1 0 6H3a3 3 0 0 1-3-3Zm3-2a2 2 0 1 0 0 4h10a2 2 0 1 0 0-4H3Z" />
+                                            </svg>
+                                            <h3 class="display-6">Conectibidad</h3>
+                                            <p>Carga Rapida en 30 mins a traves de su puerto Type-C para carga y Datos.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 px-2">
+                                <p class="mb-4">Desde realizar videollamadas envolventes hasta navegar por aplicaciones
+                                    con
+                                    gestos intuitivos, las gafas de realidad virtual con Android amplían las
+                                    posibilidades
+                                    de
+                                    interacción. Además, al eliminar la necesidad de sostener un dispositivo en la mano,
+                                    experimentarás una libertad de movimiento inigualable. Este cambio revolucionario no
+                                    solo
+                                    redefine la forma en que consumimos contenido digital, sino que también integra la
+                                    tecnología de manera fluida y natural en nuestra vida diaria, ofreciendo una
+                                    perspectiva
+                                    innovadora y emocionante del futuro de la comunicación y la conectividad.</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+    </div>
+
+    <hr>
+    <footer class="container-fluid">
+        <div class="row px-5 pt-4 pb-2 bg-secundary">
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <h3 class="h3">Landa Glass</h3>
+                <div class="mb-2">
+                    <p class="">Spain, Seville</p>
+                </div>
+                <img src="assets/img/logos/logo-simbol-v2.svg" class="footer-logo img-fluid img-thumbnail mx-2 mb-5"
+                    alt="Logo">
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <h5 class="h5 mb-3">Productos</h5>
+                <div class="mb-2"><a href="#" class="">Landa SmartGlass Flow</a></div>
+                <div class="mb-2"><a href="#" class="">Landa SmartGlass Accesorios</a></div>
+                <div class="mb-2"><a href="#" class="">Landa Store</a></div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <h5 class="h5 mb-3">Links</h5>
+                <div class="mb-2"><a href="#" class="">Term & Conditions</a></div>
+                <div class="mb-2"><a href="#" class="">Privacy Policy</a></div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <h5 class="h5 mb-3">Contacto</h5>
+                <div class="mb-2"><a href="https://github.com/landalv" class="">Github</a></div>
+                <div class="mb-2"><a href="https://www.linkedin.com/in/carlos-landa-vazquez/" class="">LinkIn</a></div>
+            </div>
+        </div>
+        <div class="row px-5 py-2 bg-secundary">
+            <p class="h5 col-12 text-center">Copyright - All rigths reserved &copy; 2024</h2>
+            </p>
+        </div>
+        <!--Pie de pagina web
+        <div class="container justify-content-center">
+            <div class="row justify-content-center">
+                <h2 class="display-6">&copy; carloslanda.es 2023</h2>
+            </div>
+
+        </div>-->
+    </footer>
+
+    <!--Boostrap-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
